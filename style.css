@@ -77,8 +77,8 @@ i{
 .carousel-caption{
     
 }
-.carousel-indicators li {
-    color: #0b4752!important;
+.carousel-indicators .indicator{
+    background-color: #000000;
 }
 .carousel-control-prev-icon{
 
