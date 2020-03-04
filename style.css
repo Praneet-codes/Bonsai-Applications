@@ -1,0 +1,478 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover, .footer-section a:hover, .logo a:hover{
+    text-decoration: none!important;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+i{
+    color: #2fccd0;
+}
+.extra-div h2, .service-div h2{
+    font-size: 1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 5px;
+}
+/* *********Main CSS Start*********  */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.2),rgba(0,168,255,0.2)), url("home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .2;
+    z-index: -1;
+    background-image: linear-gradient(to right, #54bbd4 0%, #3590bb 50%, #2729b3 100%)
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    margin-top: 10px;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .2;
+    z-index: -1;
+    background-image: linear-gradient(to right, #0d3d49 0%, #3d8091 50%, #2a2b75 100%)
+}
+.carousel-inner-first img {
+    width: 100%;
+    height: 100vh!important;
+    border-radius: 0%!important;
+}
+.carousel-caption{
+    
+}
+.carousel-indicators li {
+    color: #0b4752!important;
+}
+.carousel-control-prev-icon{
+
+}
+.carousel-control-next-icon{
+
+}
+.logo h1{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo:hover{
+    color: #fff;
+}
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+/* addition div start */
+.add-div{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 10px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+    text-align: center;
+}
+.extra-div:hover{
+    /* box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+/* addition div end */
+
+/* Services section start */
+.services{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings{
+    margin-bottom: 50px;
+}
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.service-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0!important;
+}
+.progress{
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+    background: #606060;
+}
+/* Services section end */
+
+/* our pricing section details start*/
+.pricing{
+    widows: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+    border-radius: 30px!important;
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff!important;
+    padding: 25px 9!important;
+    border-radius: 30px!important;
+}
+.card-body{
+    padding: 30px 0!important;
+    color: #606060!important;
+}
+.card-body li{
+    margin: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: #fff!important;
+    padding: 15px 9!important;
+    margin: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.card-footer a{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 5px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+}
+.card:hover .card-footer a{
+    color: #fff;
+    background: #50d1c0;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover .card-header, .card:hover .money{
+    color: #50d1c0;
+}
+.card-middle{
+    transform: translateY(-20px);
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+}
+/* our pricing section  details end*/
+
+/* customers feedback start CSS */
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+    /* padding:0; */
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: 0.5s ease;
+    height: 500px;
+}
+.box:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    height: 510px;
+    /* width: 35px; */
+}
+.carousel img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.carousel{
+    height: 550px;
+}
+
+/* customers feedback end CSS */
+
+/* contact us styling start */
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(333deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+.form-button button{
+    border: none;
+    border-radius: 100px;
+    margin: 5px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    background: transparent;
+}
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.form-button button:hover{
+    color: #fff!important;
+    background: #14c5e4!important;
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+/* contact us styling end */
+
+/* newsletter start */
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+.mail-input{
+    border-radius: 100px 0 0 100px!important;
+    min-width: 150px;
+    min-height: 45;
+}
+.subscribe{
+    color: #fff!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 130px;
+    min-height: 45;
+    border-color: 1px solid #5bc0de!important;
+}
+/* newsletter end */
+
+/* footer start */
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20 0;
+    /* margin-top: 100px; */
+    background: #00abff;
+    position: relative;
+}
+.footer-section p{
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.footer-section address i{
+    color: #fff!important;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.footer-section h3{
+    padding-top: 20px;
+}
+.footer-section li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+}
+.newsletter-main{
+    margin-top: 10px;
+}
+.copyright{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-section h3{
+    text-transform: uppercase;
+    color: #6dddce;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    letter-spacing: 10px!important;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    /* z-index: 99; */
+    border: none;
+    color: #fff;
+    background-color: #31837f;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+/* footer end */
+
+/* *********Main CSS End*********  */
+
+
+/* ********Media Quaries*********** */
+
+
+@media(max-width: 1024px){
+    .nav-item{
+        text-align: center!important;
+    }
+
+    .pricing, .happyclients, .contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .card-middle{
+        transform: translateY(0px);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contactus p{
+        padding: 0 50px;
+    }
+
+    .news-email{
+        margin-left: 0px!important;
+    }
+
+    .footer-section .aboutmid, .footer-section .aboutlast{
+        text-align: left!important;
+    }
+    .carousel{
+        height: auto;
+    }
+}
