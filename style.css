@@ -39,7 +39,7 @@ i{
 .header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,168,255,0.2),rgba(0,168,255,0.2)), url("home.jpg");
+    /* background-image: linear-gradient(rgba(0,168,255,0.2),rgba(0,168,255,0.2)), url("home.jpg"); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
@@ -52,9 +52,9 @@ i{
     bottom: 0%;
     left: 0;
     right: 0;
-    opacity: .2;
+    opacity: 0.8;
     z-index: -1;
-    background-image: linear-gradient(to right, #54bbd4 0%, #3590bb 50%, #2729b3 100%)
+    /* background-image: linear-gradient( 135deg,  #130CB7 10%, #52E5E7 100%); */
 }
 .navbar::before{
     content: "";
@@ -65,26 +65,19 @@ i{
     bottom: 0%;
     left: 0;
     right: 0;
-    opacity: .2;
+    opacity: 0.4;
     z-index: -1;
-    background-image: linear-gradient(to right, #0d3d49 0%, #3d8091 50%, #2a2b75 100%)
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
 }
 .carousel-inner-first img {
     width: 100%;
     height: 100vh!important;
     border-radius: 0%!important;
-}
-.carousel-caption{
-    
+    /* opacity: 0.5; */
+    background-image: linear-gradient(135deg, #0E5CAD 10%, #79F1A4 100%);
 }
 .carousel-indicators .indicator{
     background-color: #000000;
-}
-.carousel-control-prev-icon{
-
-}
-.carousel-control-next-icon{
-
 }
 .logo h1{
     color: #fff;
@@ -234,6 +227,8 @@ i{
     margin: 2px;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
@@ -273,41 +268,14 @@ i{
 .card:hover .card-header, .card:hover .money{
     color: #50d1c0;
 }
-.card-middle{
-    transform: translateY(-20px);
-    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
-}
 /* our pricing section  details end*/
 
-/* customers feedback start CSS */
+/* our showcase start CSS */
 .happyclients{
     width: 100%;
     height: 100vh;
-    margin-top: 10px;
-    /* padding:0; */
 }
-.box{
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    transition: 0.5s ease;
-    height: 500px;
-}
-.box:hover{
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    height: 510px;
-    /* width: 35px; */
-}
-.carousel img{
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
-.carousel{
-    height: 550px;
-}
-
-/* customers feedback end CSS */
+/* our showcase end CSS */
 
 /* contact us styling start */
 .contactus{
