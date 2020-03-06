@@ -67,14 +67,19 @@ i{
     right: 0;
     opacity: 0.4;
     z-index: -1;
-    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    background-image: linear-gradient( 135deg, #002661 10%, #92FFC0 100%);
 }
 .carousel-inner-first img {
     width: 100%;
     height: 100vh!important;
     border-radius: 0%!important;
-    /* opacity: 0.5; */
-    background-image: linear-gradient(135deg, #0E5CAD 10%, #79F1A4 100%);
+    opacity: 0.9;
+    /* background-image: linear-gradient(135deg, #43c6ac 10%, #191654 100%); */
+}
+.carousel-inner-first img::after{
+    content: "";
+    position: relative;
+    background-image: linear-gradient(135deg, #43c6ac 10%, #191654 100%);
 }
 .carousel-indicators .indicator{
     background-color: #000000;
@@ -274,6 +279,19 @@ i{
 .happyclients{
     width: 100%;
     height: 100vh;
+}
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+.box{
+    height: 500px;
+    /* width: fit-content; */
+    border-radius: 20px;
+}
+.showcase-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 /* our showcase end CSS */
 
