@@ -74,12 +74,13 @@ i{
     height: 100vh!important;
     border-radius: 0%!important;
     opacity: 0.9;
+    position: relative;
     /* background-image: linear-gradient(135deg, #43c6ac 10%, #191654 100%); */
 }
 .carousel-inner-first img::after{
     content: "";
-    position: relative;
-    background-image: linear-gradient(135deg, #43c6ac 10%, #191654 100%);
+    position: absolute;
+    /* background-image: linear-gradient(135deg, #43c6ac 10%, #191654 100%); */
 }
 .carousel-indicators .indicator{
     background-color: #000000;
@@ -285,7 +286,7 @@ i{
 }
 .box{
     height: 500px;
-    /* width: fit-content; */
+    width: fit-content;
     border-radius: 20px;
 }
 .showcase-img{
