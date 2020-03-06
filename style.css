@@ -285,7 +285,7 @@ i{
     background-color: #16c9f6!important;
 }
 .box{
-    height: 500px;
+    height: 470px;
     width: fit-content;
     border-radius: 20px;
 }
@@ -424,6 +424,13 @@ form:hover .form-button button{
 #myBtn:hover{
     background: #606060;
 }
+
+/* privacy policy css */
+.privacy-div{
+    margin-top: 80px;
+}
+
+/* privacy policy css */
 /* footer end */
 
 /* *********Main CSS End*********  */
