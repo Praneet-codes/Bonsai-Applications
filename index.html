@@ -7,7 +7,8 @@
         content="Purchase websites for your business, Purchase apps for your business, buy websites, buy applications or apps">
     <meta name="keywords" content="learn programming, learn to code, be a web developer or programmer">
     <meta name="author" content="Bonsai Applications">
-    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -294,7 +295,7 @@
 
         <!-- showcase carousel start -->
 
-       <div class="parent-box owl-carousel container">
+       <div class="parent-box owl-carousel owl-theme container">
            <div class="box">
             <img src="showcase/showcase0.jpg" alt="Showcase Image">
            </div>
@@ -334,17 +335,17 @@
     <!-- contact us start -->
     <section class="contactus" id="contact">
         <div class="container headings text-center">
-            <h1 class="text-center font-weight-bold">
+            <h1 class="text-center font-weight-bold text-white">
                 Contact Us
             </h1>
-            <p class="text-uppercase pt-1">We're here to help and answer any question you might have. We look forward to
+            <p class="text-uppercase pt-1 text-white">We're here to help and answer any question you might have. We look forward to
                 hearing from you</p>
         </div>
 
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+                <div class="col-lg-6 col-md-12 col-12">
                     <form action="">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" required autocomplete="off"
@@ -367,9 +368,21 @@
                         </div>
 
                         <div class="d-flex justify-content-center form-button">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
                         </div>
                     </form>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="contact-add-div">
+                        <address class="contact-add">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>info@bonsaiapplications.com</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>+91 81307 56533</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Office 374, 3rd Floor,</li>
+                            <li class="add-botm">Cloud 9 Tower,</li>
+                            <li class="add-botm">Vaishali Ghaziabad</li>
+                        </address>
+                    </div>
                 </div>
             </div>
         </div>
@@ -506,7 +519,7 @@
         
     </script>
     <script src="jQuery.js"></script>
-    <script src="owl.carousel.js"></script>
+    <script src="owl.carousel.min.js"></script>
     <script>
         //showcase carousel
         $(document).ready(function() {
@@ -514,7 +527,8 @@
             loop:true,
             margin:10,
             responsiveClass:true,
-            dots:false,
+            dots:true,
+            items:4,
             autoplay:true,
             autoplayTimeout:3000,
             responsive:{
