@@ -27,8 +27,8 @@ p{
 i{
     color: #2fccd0;
 }
-.extra-div h2, .service-div h2{
-    font-size: 1rem;
+.extra-div h2{
+    font-size: 20px;
     margin: 20px 0 15px 0;
     font-weight: bold;
     line-height: 1.1;
@@ -152,6 +152,7 @@ i{
 .carousel-caption a {
     border: none;
     background: #50d1c0;
+    box-shadow:  0 0 10px #CC00CC, 0 0 10px #9900CC;
     color: #fff;
     padding: 15px 35px;
     display: inline-block;
@@ -180,7 +181,7 @@ i{
 }
 .extra-div:hover{
     /* box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.3); */
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 10px -10px rgb(79, 141, 199);
     transform: translateY(-20px);
 }
 /* addition div end */
@@ -198,6 +199,7 @@ i{
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    padding-top: 10px;
 }
 .names h1{
     color: #2e2e2e;
@@ -205,11 +207,22 @@ i{
     text-transform: uppercase;
     font-weight: bold;
 }
+.service-div h2{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 .service-icon{
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0!important;
+    margin-right: 10px;
 }
 .progress{
     height: 0.6rem!important;
@@ -306,6 +319,7 @@ i{
 .happyclients{
     width: 100%;
     height: 100vh;
+    margin-bottom: 10px;
 }
 .parent-box{
     /* background-color: #2e2e2e; */
@@ -362,7 +376,8 @@ i{
     padding: 12px 35px;
     outline: none;
     color: #fff;
-    background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
+    box-shadow: 0px 0px 10px #be3e94;
+    background: linear-gradient(150deg, #6018dc 40%, #eead92 100%);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -402,6 +417,12 @@ i{
     margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
+}
+.contact-add p a{
+    color: aliceblue;
+}
+.contact-add p a:hover{
+    color: #33FFFF;
 }
 /* contact us styling end */
 
@@ -461,6 +482,12 @@ i{
     margin: 0px;
     margin-bottom: -10px;
 }
+.aboutone address p a{
+    color: #fff;
+}
+.aboutone address p a:hover{
+    color: #33FFFF;
+}
 .newsletter-main{
     margin-top: 10px;
 }
@@ -518,7 +545,7 @@ i{
     }
 
     .card-middle{
-        transform: translateY(0px);
+        /* transform: translateY(0px); */
         margin-top: 30px;
         margin-bottom: 30px;
     }
