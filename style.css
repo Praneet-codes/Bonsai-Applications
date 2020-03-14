@@ -69,7 +69,7 @@ i{
     right: 0;
     opacity: 0.4;
     z-index: -1;
-    background-image: linear-gradient( 135deg, #002661 10%, #92FFC0 100%);
+    background-image: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
 }
 .carousel-inner-first img {
     width: 100%;
@@ -146,11 +146,12 @@ i{
 }
 .carousel-caption h3{
     text-transform: uppercase;
+    text-shadow: 5px 5px 10px darkorchid, -5px -5px 10px darkorchid;
     font-size: 50px;
     font-weight: bold;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: indigo;
 }
 .carousel-caption a {
     border: none;
@@ -210,28 +211,40 @@ i{
     text-transform: uppercase;
     font-weight: bold;
 }
-.service-div h2{
+/* .service-div h2{
     font-size: 25px;
     font-weight: bold;
     position: absolute;
+    text-align:;
+    width: auto;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-}
-.service-icon{
-    font-size: 15px;
+} */
+
+/* .service-div .serv-head{
+    text-align: left!important;
+} */
+.service-icon i{
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0!important;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
-.progress{
+.service-icon h2{
+    font-size: 35px!important;
+}
+.services-row{
+    margin-bottom: 10px;
+}
+/* .progress{
     height: 0.6rem!important;
     margin-bottom: 25px!important;
     background: #606060;
-}
+} */
 /* Services section end */
 
 /* our pricing section details start*/
@@ -259,11 +272,12 @@ i{
 .card{
     transition: 0.4s ease;
     border-radius: 30px!important;
+    box-shadow: 5px 4px 30px #666666 inset, -5px -5px 20px #666666 inset;
 }
 .card-header{
     font-size: 1.6rem;
     font-weight: bold;
-    background: #fff!important;
+    background: transparent!important;
     padding: 25px 9!important;
     border-radius: 30px!important;
 }
@@ -283,7 +297,7 @@ i{
     color: #606060;
 }
 .card-footer{
-    background: #fff!important;
+    background: transparent!important;
     padding: 15px 9!important;
     margin: 5px;
     margin-bottom: 10px;
