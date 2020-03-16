@@ -550,7 +550,7 @@ i{
 /******** Custom Scrollar *******/
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
   
   /* Track */
@@ -568,6 +568,13 @@ i{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: blueviolet; 
+  }
+
+  /***** for firefox ******/
+  html{
+      overflow-y: scroll;
+      scrollbar-color: blueviolet;
+      scrollbar-width: 10px;
   }
 /******** Custom Scrollar end*******/
 
