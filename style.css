@@ -561,13 +561,13 @@ i{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: blueviolet; 
+    background: blueviolet;
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: blueviolet; 
+    background: blueviolet;
   }
 
   /***** for firefox ******/
@@ -610,5 +610,107 @@ i{
     }
     .carousel{
         height: auto;
+    }
+    .contact-add-div{
+        height: 280px;
+    }
+}
+@media(max-width:768px){
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link{
+        background-color: darkorchid;
+        width: 100%;
+        /* padding-top: 10px; */
+        /* margin: auto; */
+    }
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+        background-color: gray;
+    }
+}
+@media(max-width: 578.98px){
+    .logo h1{
+        margin-top: 27px!important;
+    }
+    .navbar-toggler{
+        margin-top: 22px!important;
+        color: #606060!important;
+        border-color: #606060!important;
+    }
+    .serv-head{
+        text-align: center;
+    }
+    .happyclients{
+        height: auto;
+    }
+    .owl-stage{
+        height: 100vh;
+    }
+    .owl-carousel .owl-item img{
+        height: 90vh;
+    }
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        display: inline-block;
+    }
+    .box{
+        height: 90vh;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: darkgray;
+        border-radius: 25px;
+    }
+}
+
+@media(max-width:425px){
+    .web-head{
+        font-size: 19px!important;
+        font-weight: bold!important;
+        margin-top: 10px!important;
+        margin-bottom: 25px!important;
+    }
+    .navbar-toggler{
+        padding: .25rem .25rem!important;
+        font-size: 1rem!important;
+        line-height: 1!important;
+        border: 1px solid gray!important;
+        margin-top: 10px!important;
+        margin-bottom: 8px!important;
+    }
+}
+
+@media(max-width:375px){
+    .contact-add-div{
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .web-logo{
+        width: 65px!important;
+        height: 65px!important;
+        vertical-align: middle;
+        margin-top: 10px!important;
+    }
+    .web-head{
+        font-size: 17px!important;
+        font-weight: bold!important;
+        margin-top: 10px!important;
+        margin-bottom: 20px!important;
+    }
+    .navbar-toggler{
+        padding: .25rem .2rem!important;
+        font-size: 1rem!important;
+        line-height: 1!important;
+        border: 1px solid gray!important;
+        margin-top: 15px!important;
+    }
+}
+
+@media(max-width:320px){
+    
+    .contact-add p{
+        padding: 0px;
+    }
+    .contact-add-div{
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
     }
 }
