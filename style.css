@@ -272,7 +272,7 @@ i{
 .card{
     transition: 0.4s ease;
     border-radius: 30px!important;
-    box-shadow: 5px 4px 30px #666666 inset, -5px -5px 20px #666666 inset;
+    box-shadow: 1px 1px 10px #666666 inset, -1px -1px 10px #666666 inset;
 }
 .card-header{
     font-size: 1.6rem;
@@ -714,3 +714,5 @@ i{
         justify-content: center;
     }
 }
+
+/* add animations */
