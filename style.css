@@ -98,8 +98,11 @@ i{
 }
 .nav-item a{
     color: #fff!important;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 17px;
+}
+.nav-item a:hover{
+    border-bottom: 1px solid #fff;
 }
 .header-section{
     width: 100%;
@@ -271,8 +274,8 @@ i{
 }
 .card{
     transition: 0.4s ease;
-    border-radius: 30px!important;
-    box-shadow: 1px 1px 10px #666666 inset, -1px -1px 10px #666666 inset;
+    border-radius: 15px!important;
+    box-shadow: 2px 2px 5px #666666, -2px -2px 5px #666666;
 }
 .card-header{
     font-size: 1.6rem;
@@ -305,7 +308,7 @@ i{
 }
 .card-footer a{
     border: 1px solid blueviolet;
-    border-radius: 100px;
+    border-radius: 15px;
     margin: 5px 5px;
     padding: 12px 35px;
     outline: none;
@@ -321,11 +324,14 @@ i{
     color: #fff;
     background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
     text-decoration: none;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card-footer a:hover{
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.3);
+
 }
 .card:hover{
-    transform: translateY(-20px);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    /* transform: translateY(-20px); */
+    box-shadow: 5px 5px 30px #666666, -5px -5px 30px #666666;
 }
 .card:hover .card-header, .card:hover .money{
     color: blueviolet;
