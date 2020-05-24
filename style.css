@@ -246,8 +246,11 @@ picture{
 .service-icon h2{
     font-size: 35px!important;
 }
+/* .service-sections{
+    margin: 20px;
+} */
 .services-row{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 /* .progress{
     height: 0.6rem!important;
@@ -267,7 +270,7 @@ picture{
 .pricing{
     widows: 100%;
     height: 100vh;
-    padding: 50px;
+    /* padding: 50px; */
     position: relative;
 }
 .pricing:before{
@@ -281,7 +284,7 @@ picture{
     background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
 }
 .money{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1;
     color: #606060;
 }
@@ -295,7 +298,9 @@ picture{
     font-weight: bold;
     background: transparent!important;
     padding: 25px 9!important;
-    border-radius: 30px!important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    /* border-bottom: 1px solid #00000020; */
 }
 .card-body{
     padding: 30px 0!important;
@@ -321,7 +326,7 @@ picture{
 }
 .card-footer a{
     border: 1px solid blueviolet;
-    border-radius: 15px;
+    border-radius: 6px;
     margin: 5px 5px;
     padding: 12px 35px;
     outline: none;
@@ -643,6 +648,12 @@ picture{
     }
     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
         background-color: gray;
+    }
+    .pricing::before{
+        height: 235vh;
+    }
+    .card-middle{
+        margin: 0px;
     }
 }
 @media(max-width: 578.98px){
